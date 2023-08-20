@@ -1,0 +1,62 @@
+1. Tampilkan X pelanggan dengan frekuensi pembelian paling sering (X = nomor akhir npm anda +4, jika X>10 maka X dikurangi 10)
+X = 2 + 4 = 6
+Tampilkan 6 pelanggan dengan frekuensi pembelian paling sering (X = nomor akhir npm anda +4, jika X>10 maka X dikurangi 10)
+
+SELECT pelanggan.nama, COUNT(*) AS frekuensi FROM transaksi
+INNER JOIN pelanggan ON transaksi.pelanggan_id = pelanggan.id
+GROUP BY nama 
+ORDER BY frekuensi DESC
+LIMIT 6; 
+
+2. Tampilkan X pelanggan dengan total harga pembelian paling banyak (X = nomor akhir npm anda +3, jika X>10 maka X dikurangi 10)
+X = 2 + 3 = 5
+Tampilkan 5 pelanggan dengan total harga pembelian paling banyak 
+
+SELECT nama, SUM(harga) AS total_harga FROM pelanggan
+INNER JOIN transaksi ON transaksi.pelanggan_id = pelanggan.id
+INNER JOIN produk ON transaksi.produk_id = produk.id
+GROUP BY nama 
+ORDER BY total_harga DESC
+LIMIT 5;
+
+3. Tampilkan X produk yang paling sedikit terjual (X = nomor akhir npm anda +2, jika X>10 maka X dikurangi 10)
+X = 2 + 2 = 4
+Tampilkan 4 produk yang paling sedikit terjual 
+
+SELECT produk.merk, COUNT(*) AS frekuensi, SUM(jumlah) AS total_barang FROM transaksi
+INNER JOIN produk ON transaksi.produk_id = produk.id
+GROUP BY merk
+ORDER BY frekuensi ASC 
+LIMIT 4;
+
+4. Tampilkan semua karyawan yang melayani pelanggan yang paling lama bergabung
+
+SELECT karyawan.nama FROM karyawan
+INNER JOIN transaksi ON transaksi.karyawan_id = karyawan.id 
+INNER JOIN pelanggan ON transaksi.pelanggan_id = pelanggan.id 
+WHERE pelanggan.nama = 'martinus' 
+GROUP BY karyawan.nama;
+
+
+SELECT karyawan.nama FROM karyawan
+INNER JOIN transaksi ON transaksi.karyawan_id = karyawan.id 
+INNER JOIN pelanggan ON transaksi.pelanggan_id = pelanggan.id 
+WHERE pelanggan.nama = 'icha' 
+GROUP BY karyawan.nama;'
+
+
+SELECT karyawan.nama FROM karyawan
+INNER JOIN transaksi ON transaksi.karyawan_id = karyawan.id 
+INNER JOIN pelanggan ON transaksi.pelanggan_id = pelanggan.id 
+WHERE pelanggan.nama = 'yuri' 
+GROUP BY karyawan.nama;'
+
+5. Tampilkan X karyawan yang paling aktif melayani transaksi (X = nomor akhir npm anda +1)
+X = 2 + 1 = 3
+Tampilkan 3 karyawan yang paling aktif melayani transaksi 
+
+SELECT karyawan.nama, COUNT(*) AS frekuensi_melayani_transaksi FROM transaksi
+INNER JOIN karyawan ON transaksi.karyawan_id = karyawan.id 
+GROUP BY nama 
+ORDER BY frekuensi_melayani_transaksi DESC
+LIMIT 3; 
