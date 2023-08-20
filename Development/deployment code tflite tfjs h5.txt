@@ -1,0 +1,26 @@
+"""## Deployment
+Agar nantinya dapat diimplementasikan atau dikembangkan lebih lanjut, model perlu di-deploy terlebih dahulu dalam format HDF5, TFLite (Mobile) atau TensorflowJS (Web)
+### HDF5
+"""
+
+densenet_model.save('model-flowers-recognition.h5')
+
+"""### TFLite"""
+
+converter = tf.lite.TFLiteConverter.from_keras_model(densenet_model)
+tflite_model = converter.convert()
+with tf.io.gfile.GFile('model-flowers-recognition.tflite', 'wb') as f:
+  f.write(tflite_model)
+
+"""### TensorflowJS"""
+
+# Instal TensorflowJS
+!pip install tensorflowjs
+
+!tensorflowjs_converter \
+    --input_format=keras \
+    /content/model-flowers-recognition.h5 /content/modeltfjs
+
+"""## Penutup
+Saat ini model machine learning untuk mengenali gambar bunga telah didapatkan. Dengan model ini dapat diimplementasikan lebih lanjut menjadi aplikasi web atau mobile untuk mengenali jenis bunga. Namun tentu saja model ini juga masih dapat disempurnakan dengan mencoba pretrained model yang lain, melakukan fine-tuning, atau dengan mengubah dataset yang lebih beragam dan berkualitas.
+"""
