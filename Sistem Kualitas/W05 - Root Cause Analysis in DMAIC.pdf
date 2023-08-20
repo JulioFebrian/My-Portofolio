@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>EMAS2: Log in to the site</title>
+    <link rel="shortcut icon" href="https://emas2.ui.ac.id/theme/image.php/lambda/theme/1615300845/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, EMAS2: Log in to the site" />
+<link rel="stylesheet" type="text/css" href="https://emas2.ui.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://emas2.ui.ac.id/theme/styles.php/lambda/1615300845_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/emas2.ui.ac.id","sesskey":"R0dZjALahN","sessiontimeout":"7200","themerev":"1615300845","slasharguments":1,"theme":"lambda","iconsystemmodule":"core\/icon_system_standard","jsrev":"1614442681","admin":"admin","svgicons":true,"usertimezone":"Asia\/Jakarta","contextid":5,"langrev":1614442681,"templaterev":"1614442681"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/emas2.ui.ac.id\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/emas2.ui.ac.id\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/emas2.ui.ac.id\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/emas2.ui.ac.id\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/emas2.ui.ac.id\/theme\/yui_combo.php?m\/1614442681\/","combine":true,"comboBase":"https:\/\/emas2.ui.ac.id\/theme\/yui_combo.php?","ext":false,"root":"m\/1614442681\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/emas2.ui.ac.id\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/emas2.ui.ac.id\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1614442681\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/emas2.ui.ac.id\/lib\/javascript.php\/1614442681\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/emas2.ui.ac.id\/lib\/javascript.php\/1614442681\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<script type="text/javascript" src="https://emas.ui.ac.id/additional_fitur/lib_js/mod.js"></script>
+
+<style>
+.title-text{
+height:auto!important;
+}
+.block_simple_clock .clock{
+width: 70%;
+}
+.camera_fakehover{
+height:auto;
+}
+span.purechat-truncate{
+display: hidden;
+}
+</style>
+
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'e669ae9d-5a4b-4f92-aa81-297f8ea3b4fe', f: true }); done = true; } }; })();</script>
+
+<script>
+document.onreadystatechange = function(){
+     if(document.readyState === 'complete'){
+         /*code here*/
+		 var currentLocation = ""+window.location;
+		//alert(currentLocation);	
+		var forum = currentLocation.indexOf("/mod/forum/post.php?"); 
+		if(forum>=0){
+			//alert(forum);
+			 var content = '<div class="fitem required fitem_feditor" id="yui_3_13_0_2_1537754429316_476"><div id="asd" class="fitemtitle"><label for="asd">Atribut<span class="req"><img class="icon " alt="Required field" title="Required field" src="https://emas2.ui.ac.id/theme/image.php/lambda/core/1536907540/req"></span>&nbsp;</label></div><div class="felement feditor" id="yui_3_13_0_2_1537754429316_475">   <span style="width:600;line-height: 2.0;" id="yui_3_13_0_2_1537754429316_474"><span style="float:left;width:150px;left:50px;" id="yui_3_13_0_2_1537754429316_473"><input type="radio" id="id_tidak_setuju" name="jenis_atribut" value="|tidak_setuju"> <img src="emoticons/tidak_setuju.png"> Tidak setuju</span> <span style="float:left;width:150px;left:50px;"><input type="radio" id="id_setuju" name="jenis_atribut" value="|setuju"> <img src="emoticons/setuju.png"> Setuju</span> <span style="float:left;width:150px;left:50px;"><input type="radio" id="id_jawaban" name="jenis_atribut" value="|jawaban"> <img src="emoticons/jawaban.png"> Jawaban</span> <span style="float:left;width:150px;left:50px;"><input type="radio" id="id_pertanyaan" name="jenis_atribut" value="|pertanyaan"> <img src="emoticons/pertanyaan.png"> Pertanyaan</span> <span style="float:left;width:150px;left:50px;"><input type="radio" id="id_teori" name="jenis_atribut" value="|teori"> <img src="emoticons/teori.png"> Teori</span> <span style="float:left;width:150px;left:50px;"><input type="radio" id="id_masukan" name="jenis_atribut" value="|masukan"> <img src="emoticons/masukan.png"> Masukan</span> <span style="float:left;width:150px;left:50px;"><input type="radio" id="id_pemicu" name="jenis_atribut" value="|pemicu"> <img src="emoticons/pemicu.png"> Pemicu</span> <span style="float:left;width:150px;left:50px;"><input type="radio" id="id_ide_baru" name="jenis_atribut" value="|ide_baru"> <img src="emoticons/ide_baru.png"> Ide baru</span> </span> </div></div>';
+			$(content).insertBefore("#fitem_id_subject");
+			document.getElementById('id_submitbutton').onclick = function(e){
+				var TheTextBox 		= document.getElementById("id_subject");
+				var id_tidak_setuju = document.getElementById("id_tidak_setuju");
+				var klik_value 	= document.querySelector('input[name="jenis_atribut"]:checked').value;
+
+				TheTextBox.value = TheTextBox.value + klik_value; 
+			}
+		}
+		var listforum = currentLocation.indexOf("/mod/forum/view.php?"); 
+		var listforum2 = currentLocation.indexOf("/forum_embed/forum_embed.php?");		
+		//alert(listforum2);
+		if(listforum>=0 || listforum2 >=0){
+			//alert('test');
+			//var theTbl = document.getElementsByClassName('getElementsByClassName');
+			var cols = document.getElementsByClassName('forumheaderlist')[0].getElementsByClassName('topic starter'), colslen = cols.length, i = -1;
+			//alert(colslen);
+			while(++i < colslen){
+				//alert("test");
+				var judul       = ""+cols[i].innerHTML;
+				var pecah_judul = judul.split("|");
+				var text_saja   = pecah_judul[0];
+				var char_emot   = "";
+				if(pecah_judul.length>1){
+					char_emot   = pecah_judul[1];
+					var str_repstr	= char_emot.replace("</a>", "");
+					var str_baru	= "<img src='emoticons/"+str_repstr+".png'>";
+					cols[i].innerHTML = text_saja+str_baru;
+				}
+								
+				
+				//alert(str_baru);
+			}
+		}
+		var discuss = currentLocation.indexOf("/mod/forum/discuss.php?"); 
+		if(discuss>=0){
+			var isijudul = document.getElementsByClassName("discussionname")[0];
+			judul = ""+isijudul.innerHTML;
+			var pecah_judul = judul.split("|");
+			var text_saja   = pecah_judul[0];
+			var char_emot   = "";
+			if(pecah_judul.length>1){
+				char_emot   = pecah_judul[1];
+				var str_repstr	= char_emot.replace("</a>", "");
+				var str_baru	= "<img src='emoticons/"+str_repstr+".png'>";
+				isijudul.innerHTML = text_saja+str_baru;
+			}
+
+		}
+     }
+}
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23617906-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23617906-6');
+</script>
+
+   <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.startgif', '1,4463105,4,10038,"div#histatsC {position: absolute;top:50%;right:0px;}body>div#histatsC {position: fixed;}"']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_giftop_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><style type="text/css">div#histatsC {position: absolute;top:50%;right:0px;}body>div#histatsC {position: fixed;}</style>
+<a href="/" alt="" target="_blank" ><div id="histatsC"><img border="0" src="//s4is.histats.com/stats/i/4463105.gif?4463105&103"></div></a>
+</noscript>
+        <!-- Histats.com  END  --><meta name="robots" content="noindex" />    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400%7COpen+Sans:700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+</head>
+
+<body  id="page-login-index" class="format-site  path-login gecko dir-ltr lang-en yui-skin-sam yui3-skin-sam emas2-ui-ac-id pagelayout-login course-1 context-5 notloggedin login_lambda centered_logo column-2" >
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://emas2.ui.ac.id/lib/javascript.php/1614442681/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://emas2.ui.ac.id/lib/javascript.php/1614442681/lib/polyfills/polyfill.js"></script>
+<script src="https://emas2.ui.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://emas2.ui.ac.id/theme/jquery.php/core/jquery-3.4.1.min.js"></script>
+<script src="https://emas2.ui.ac.id/lib/javascript.php/1614442681/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<style>
+div#histatsC img{
+width:80%;
+   height: auto;
+filter:   brightness(100%);
+}
+div#histatsC{
+opacity: 0.5;
+margin-right: -10px;
+transition: 1s;
+}
+div#histatsC:hover{
+opacity: 1;
+
+}
+</style>
+<div id="wrapper" style="border-top: none;" >
+
+
+<div id ="page-header-nav" class="clearfix">
+       
+    <div class="container-fluid">    
+    <div class="row-fluid">
+    <!-- HEADER: LOGO AREA -->
+        	
+                            <div class="logo-header">
+                	<a class="logo" href="https://emas2.ui.ac.id" title="Home">
+                    <img src="//emas2.ui.ac.id/pluginfile.php/5/theme_lambda/logo/1615300845/emas2dev-asli-min.jpg" class="logo" alt="logo" />                    </a>
+                </div>
+             
+            
+    </div>
+    </div>
+               
+</div>
+
+
+<div id="page" class="container-fluid" style="background-clip:padding-box;background-color: rgba(255, 255, 255, 0.85);border: 8px solid rgba(255, 255, 255, 0.35);border-radius: 3px; margin-top: 25px;">
+
+    <div id="page-content" class="row-fluid">
+        <section id="region-main" class="span12">
+        
+            <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><div class="my-1 my-sm-5"></div>
+<div class="row justify-content-center">
+<div class="col-xl-6 col-sm-8 ">
+<div class="card">
+    <div class="card-block">
+            <h2 class="card-header text-center">EMAS2</h2>
+        <div class="card-body">
+
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-5">
+                    <form class="mt-3" action="https://emas2.ui.ac.id/login/index.php" method="post" id="login">
+                        <input id="anchor" type="hidden" name="anchor" value="">
+                        <script>document.getElementById('anchor').value = location.hash;</script>
+                        <input type="hidden" name="logintoken" value="AVdx8MiJWq4dbWXLGmr0B3plweVc10mS">
+                        <div class="form-group">
+                            <label for="username" class="sr-only">
+                                    Username
+                            </label>
+                            <input type="text" name="username" id="username"
+                                class="form-control"
+                                value=""
+                                placeholder="Username"
+                                autocomplete="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Password</label>
+                            <input type="password" name="password" id="password" value=""
+                                class="form-control"
+                                placeholder="Password"
+                                autocomplete="current-password">
+                        </div>
+                            <div class="rememberpass mt-3">
+                                <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
+                                <label for="rememberusername">Remember username</label>
+                            </div>
+
+                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">Log in</button>
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="forgetpass mt-3">
+                        <p><a href="https://emas2.ui.ac.id/login/forgot_password.php">Forgotten your username or password?</a></p>
+                    </div>
+
+                    <div class="mt-3">
+                        Cookies must be enabled in your browser
+                        <a class="btn btn-link p-0" role="button"
+    data-container="body" data-toggle="popover"
+    data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;Two cookies are used on this site:&lt;/p&gt;
+
+&lt;p&gt;The essential one is the session cookie, usually called MoodleSession. You must allow this cookie in your browser to provide continuity and to remain logged in when browsing the site. When you log out or close the browser, this cookie is destroyed (in your browser and on the server).&lt;/p&gt;
+
+&lt;p&gt;The other cookie is purely for convenience, usually called MOODLEID or similar. It just remembers your username in the browser. This means that when you return to this site, the username field on the login page is already filled in for you. It is safe to refuse this cookie - you will just have to retype your username each time you log in.&lt;/p&gt;
+&lt;/div&gt; "
+    data-html="true" tabindex="0" data-trigger="focus">
+  <img class="icon " alt="Help with Cookies must be enabled in your browser" title="Help with Cookies must be enabled in your browser" src="https://emas2.ui.ac.id/theme/image.php/lambda/core/1615300845/help" />
+</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="row justify-content-center mt-3">
+<div class="col-xl-6 col-sm-8">
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Is this your first time here?</h2>
+        </div>
+        <div>
+        <p dir="ltr" style="text-align:left;"></p><h3>Pedoman PJJ UI COVID-19</h3><div><p>Terkait Pandemi Covid-19, <a href="https://drive.google.com/file/d/15apI7crs708pHWylhaqo3DiiX9G2FLNl/view" target="_blank" rel="noreferrer noopener">Rektor UI telah mengamanatkan</a> bahwa KBM di UI diselenggarakan secara PJJ sampai akhir tahun ajaran 2019/2020. Panduan dapat diakses di dalam laman <strong><a href="https://pjj.ui.ac.id/" target="_blank" rel="noreferrer noopener">https://pjj.ui.ac.id/</a></strong> Laman tersebut memuat panduan penyelenggaraan dan berbagai informasi yang terkait, dan akan diperbarui secara berkala.</p><p>Jika ingin langsung belajar menggunakan EMAS UI, bisa masuk ke Kelas Emas Dasar menggunakan akun UI, di laman <strong><a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fui.id%2FbelajarEMAS%3Ffbclid%3DIwAR2uNupjG9Oc7sjYJdY1y_iIYGVuK2olVfNqSrQ4n_uy-Jw5IcGHW1LI4JA&amp;h=AT0ai2o3V5RT5PpxWfPoTAArymX1hVxBfIaSKD6SI8FpFqJtYF1BoxZh5O9_DljQVfyTLrm4GB-ZX3wunmtg8mxzcGN5DhOnqOtLXIPIzlyV1tXdEacNrvu5xaTxa5qijtH6GRxZntIfA8LQYjcLyL5xWtKS" target="_blank" rel="noreferrer noopener">ui.id/belajarEMAS</a></strong> dan masukkan <strong>enrolment key: pjjcovid19</strong></p></div><br />
+        </div>
+    </div>
+</div>
+</div>
+</div></div>        </section>
+    </div>
+    
+    <a href="#top" class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i><span class="lambda-sr-only">Back</span></a>
+    
+</div>
+
+	<footer id="page-footer" class="container-fluid" style="display:none;">
+			<div class="row-fluid">
+		<aside id="block-region-footer-left" class="span4 block-region" data-blockregion="footer-left" data-droptarget="1"></aside><aside id="block-region-footer-middle" class="span4 block-region" data-blockregion="footer-middle" data-droptarget="1"></aside><aside id="block-region-footer-right" class="span4 block-region" data-blockregion="footer-right" data-droptarget="1"></aside> 	</div>
+
+	<div class="footerlinks">
+    	<div class="row-fluid">
+    		<p class="helplink"></p>
+    				</div>
+        
+            		
+	<div class="socials row-fluid">
+    
+        	<div class="span6">
+        	<div class="social_contact">
+                        <nobr><i class="far fa-bookmark"></i> &nbsp;<a href='https://pjj.ui.ac.id' target="_blank" class="social_contact_web">https://pjj.ui.ac.id</a></nobr>
+                                    <nobr><i class="far fa-envelope"></i> &nbsp;<a href='mailto:emas@ui.ac.id'>emas@ui.ac.id</a></nobr>
+                        </div>
+        </div>
+        <div class="span6">
+                	<div class="social_icons pull-right">
+                <a class="social fab fa-facebook" href='https://www.facebook.com/DPASDPUI' target='_blank'> </a>                                                                                <a class="social fab fa-instagram" href='https://www.instagram.com/dpasdp.ui/' target='_blank'> </a>                <a class="social fab fa-youtube" href='https://www.youtube.com/channel/UCPJH3LDK8yzvxUEzyI-ftaA' target='_blank'> </a>                            </div>
+        </div>
+        
+    </div>
+    	        
+   	</div><div class="logininfo">You are not logged in.</div>	</footer>
+</div>
+<script>$(window).on('load resize', function () {
+if (window.matchMedia('(min-width: 980px)').matches) {
+$('.navbar .dropdown').hover(function() {
+	$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+}, function() {
+	$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+});
+} else {$('.dropdown-menu').removeAttr("style"); $('.navbar .dropdown').unbind('mouseenter mouseleave');}
+});
+
+	(function($) {
+ 		$(document).ready(function(){
+
+	var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+	});
+	jQuery('.back-to-top').click(function(event) {
+    	event.preventDefault();
+    	jQuery('html, body').animate({scrollTop: 0}, duration);
+    	return false;
+	});
+	
+	$(document).on('click', 'button[data-toggle="dropdown"]', function(event) {
+		event.preventDefault();
+  		$(this).next('.dropdown-menu').slideToggle("fast");
+	});
+	$(document).on('click', 'a[data-toggle="dropdown"]', function(event) {
+		event.preventDefault();
+  		$(this).next('.dropdown-menu').slideToggle("fast");
+	});
+	$(document).on('click', function (e) {
+    	if(!$('button[data-toggle="dropdown"]').is(e.target) && !$('button[data-toggle="dropdown"]').has(e.target).length && !$('a[data-toggle="dropdown"]').is(e.target) && !$('a[data-toggle="dropdown"]').has(e.target).length && !$(".atto_hasmenu").is(e.target)){
+        	$('.dropdown .dropdown-menu:not(.lambda-login)').slideUp("fast");
+    	}                       
+	});
+	$(document).on('click', '.modchooser button[data-action="show-option-summary"]', function(event) {
+		$('.carousel-item[data-region="modules"]').toggleClass("active");
+		$('.carousel-item[data-region="help"]').toggleClass("active");
+	});
+	$(document).on('click', '.modchooser button.closeoptionsummary ', function(event) {
+		$('.carousel-item[data-region="modules"]').toggleClass("active");
+		$('.carousel-item[data-region="help"]').toggleClass("active");
+	});
+
+	 });
+	}) (jQuery);
+
+
+var togglesidebar = function() {
+  var sidebar_open = Y.one('body').hasClass('sidebar-open');
+  if (sidebar_open) {
+    Y.one('body').removeClass('sidebar-open');
+    M.util.set_user_preference('theme_lambda_sidebar', 'sidebar-closed');
+  } else {
+    Y.one('body').addClass('sidebar-open');
+    M.util.set_user_preference('theme_lambda_sidebar', 'sidebar-open');
+  }
+};
+
+M.theme_lambda = M.theme_lambda || {};
+M.theme_lambda.sidebar =  {
+  init: function() {
+    Y.one('body').delegate('click', togglesidebar, '#sidebar-btn');
+  }
+};</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("/my/") > -1) {
+     $('#barnav').show();
+    }
+
+$('#id_idnumber').attr('readonly', false);
+$('#id_institution').attr('readonly', true);
+$('#id_department').attr('readonly', true);
+document.getElementById('barnav').style.display = 'none';
+
+
+  });
+
+
+
+</script>
+
+
+
+<style>
+div#wrappera{
+	margin-bottom: 39px;
+}
+div#barnav{
+	opacity: 90;
+	display: none;
+width: auto;
+height: auto;
+text-align: right;
+position: fixed;
+float: right;
+bottom: 0px;
+right: 0px;
+z-index: 40000000000;
+
+border: 1px solid silver;
+background-color: #CDCDCD;
+margin: 0px;
+padding:2px 20px;
+font-size: 11pt;
+-webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+
+
+}
+
+#barnav a{
+color: #45CEEF;
+-webkit-animation: colorpulsetext 4s infinite alternate;
+animation: colorpulsetext 4s infinite alternate;
+}
+@-webkit-keyframes colorpulsetext {
+0%   { color: #009e85; }
+25%  { color: #ea309c; }
+50%  { color: #f59c0d; }
+75%  { color: #2482b9; }
+}
+@keyframes colorpulsetext {
+0%   { color: #009e85; }
+25%  { color: #ea309c; }
+50%  { color: #f59c0d; }
+75%  { color: #2482b9; }
+
+}
+</style>
+
+<div id="barnav"><i class="fas fa-podcast" style="margin-right: 6px;"></i><a target="_blank" href="#"><b>Emas2 akan maintenance siang ini (pkl 12) selama 15 menit.</b></a><i style="margin-left: 16px;" class="fas fa-window-close" onclick="document.getElementById('barnav').style.display = 'none'; "></i></div><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://emas2.ui.ac.id/lib/requirejs.php/1614442681/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://emas2.ui.ac.id/lib/javascript.php/1614442681/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://emas2.ui.ac.id/lib/javascript.php/1614442681/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://emas2.ui.ac.id/lib/javascript.php/1614442681/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://emas2.ui.ac.id/lib/javascript.php/1614442681/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://emas2.ui.ac.id/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture"
+});
+
+    });
+});;
+
+;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://emas2.ui.ac.id/theme/javascript.php/lambda/1615300845/footer"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","cancel":"Cancel","morehelp":"More help","loadinghelp":"Loading...","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random6074454e3d1292'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6074454e3d1292'); });
+})();
+//]]>
+</script>
+
+</body>
+</html>
