@@ -1,2 +1,2 @@
 # My-Portofolio
-Projects, Experiences, and Skills
+Projects and Learnings
